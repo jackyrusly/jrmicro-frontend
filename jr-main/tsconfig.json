@@ -3,7 +3,7 @@
     "target": "es5",
     "baseUrl": ".",
     "paths": {
-      "jrcommon/*": ["../jr-common/src/*"]
+      "jrcommon/*": ["../jrcommon/src/*"]
     },
     "lib": [
       "dom",
