@@ -9,6 +9,9 @@ module.exports = {
       remoteType: 'var',
       remotes: {
         jrcommon: 'jrcommon',
+        jrlayout: isServer
+          ? 'jrlayout@http://localhost:3020/node/remoteEntry.js'
+          : 'jrlayout',
       },
       shared: {
         react: {

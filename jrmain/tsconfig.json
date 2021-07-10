@@ -3,7 +3,8 @@
     "target": "esnext",
     "baseUrl": ".",
     "paths": {
-      "jrcommon/*": ["../jrcommon/src/*"]
+      "jrcommon/*": ["../jrcommon/src/*"],
+      "jrlayout/*": ["../jrlayout/src/*"]
     },
     "lib": [
       "dom",
