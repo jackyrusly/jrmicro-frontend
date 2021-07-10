@@ -1,5 +1,13 @@
 # JRMicro Frontend
 
+### Install Dependencies
+
+```
+cd jrcommon && yarn
+cd jrlayout && yarn
+cd jrmain && yarn
+```
+
 ### Run JRCommon
 
 ```
