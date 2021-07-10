@@ -11,6 +11,11 @@ module.exports = withFederatedSidecar({
       requiredVersion: false,
       singleton: true,
     },
+    'react-dom': {
+      eager: true,
+      singleton: true,
+      requiredVersion: false,
+    },
   },
 })({
   webpack(config, options) {
