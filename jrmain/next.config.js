@@ -28,6 +28,8 @@ module.exports = {
       new (isServer ? NodeModuleFederation : ModuleFederationPlugin)(mfConfig),
     );
 
+    config.experiments = { topLevelAwait: true };
+
     return config;
   },
 };
