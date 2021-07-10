@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --config webpack.config.js",
     "serve": "serve dist -p 3020",
     "clean": "rm -rf dist"
   },
