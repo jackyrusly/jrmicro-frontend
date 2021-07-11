@@ -1,7 +1,11 @@
 const RemoteAbout = (await import('jrprofile/pages/about')).default;
 
-const About = () => {
-  return <RemoteAbout />;
+export const getServerSideProps = () => {
+  return {
+    props: {
+      title: 'About from Server Side Props',
+    },
+  };
 };
 
-export default About;
+export default RemoteAbout;
