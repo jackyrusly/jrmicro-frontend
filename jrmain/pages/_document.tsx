@@ -18,6 +18,10 @@ class AppDocument extends Document {
             data-webpack="jrlayout"
             src="http://localhost:3020/web/remoteEntry.js"
           />
+          <script
+            data-webpack="jrprofile"
+            src="http://localhost:3030/web/remoteEntry.js"
+          />
         </Head>
         <body>
           <Main />

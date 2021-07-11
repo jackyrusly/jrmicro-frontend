@@ -1,5 +1,5 @@
 const App = () => {
-  return <div>JRLayout</div>;
+  return <div>JRProfile</div>;
 };
 
 export default App;

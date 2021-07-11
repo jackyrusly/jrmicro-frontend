@@ -4,7 +4,7 @@ module.exports = withFederatedSidecar({
   name: 'jrcommon',
   filename: 'static/chunks/remoteEntry.js',
   exposes: {
-    './components/Header': './src/components/Header',
+    './components/card': './src/components/card',
   },
   shared: {
     react: {

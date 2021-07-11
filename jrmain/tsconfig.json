@@ -4,7 +4,8 @@
     "baseUrl": ".",
     "paths": {
       "jrcommon/*": ["../jrcommon/src/*"],
-      "jrlayout/*": ["../jrlayout/src/*"]
+      "jrlayout/*": ["../jrlayout/src/*"],
+      "jrprofile/*": ["../jrprofile/src/*"]
     },
     "lib": [
       "dom",

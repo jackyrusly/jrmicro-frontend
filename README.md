@@ -20,6 +20,12 @@ cd jrcommon && yarn dev
 cd jrlayout && yarn build && yarn serve
 ```
 
+### Run JRProfile
+
+```
+cd jrprofile && yarn build && yarn serve
+```
+
 ### Run JRMain
 
 ```

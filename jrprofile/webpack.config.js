@@ -13,12 +13,12 @@ const getConfig = (target) => ({
   },
   output: {
     path: path.resolve(__dirname, 'dist', target),
-    publicPath: `http://localhost:3020/${target}/`,
+    publicPath: `http://localhost:3030/${target}/`,
     clean: true,
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    port: 3020,
+    port: 3030,
   },
   module: {
     rules: [
@@ -31,12 +31,12 @@ const getConfig = (target) => ({
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'jrlayout',
-      library: { type: 'var', name: 'jrlayout' },
+      name: 'jrprofile',
+      library: { type: 'var', name: 'jrprofile' },
       filename: 'remoteEntry.js',
       exposes: {
-        './components/footer': './src/components/footer',
-        './components/header': './src/components/header',
+        './pages/about': './src/pages/about',
+        './pages/privacy-policy': './src/pages/privacy-policy',
       },
       shared: {
         ...deps,

@@ -12,6 +12,9 @@ module.exports = {
         jrlayout: isServer
           ? 'jrlayout@http://localhost:3020/node/remoteEntry.js'
           : 'jrlayout',
+        jrprofile: isServer
+          ? 'jrprofile@http://localhost:3030/node/remoteEntry.js'
+          : 'jrprofile',
       },
       shared: {
         react: {
