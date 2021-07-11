@@ -5,6 +5,7 @@
 ```
 cd jrcommon && yarn
 cd jrlayout && yarn
+cd jrprofile && yarn
 cd jrmain && yarn
 ```
 
