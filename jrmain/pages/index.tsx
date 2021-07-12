@@ -19,6 +19,13 @@ const Index = () => {
 
   return (
     <>
+      <style global jsx>{`
+        body {
+          font-family: Helvetica;
+          margin: 0;
+        }
+      `}</style>
+
       <style jsx>{`
         .margin {
           margin: 1em 0;
