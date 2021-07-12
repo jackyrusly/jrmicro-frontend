@@ -40,14 +40,6 @@ const Index = () => {
         </RemoteCard>
       </div>
 
-      <div>
-        <Link href="/about">About</Link>
-      </div>
-
-      <div>
-        <Link href="/privacy-policy">Privacy Policy</Link>
-      </div>
-
       <RemoteFooter />
     </>
   );
