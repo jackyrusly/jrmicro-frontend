@@ -2,11 +2,11 @@
 
 ### Demo
 
-[Home Page (CSR Modules)](https://jrmicro-frontend.vercel.app)
+[Home Page (CSR Dependencies)](https://jrmicro-frontend.vercel.app)
 
-[About Page (SSR Modules)](https://jrmicro-frontend.vercel.app/about)
+[About Page (SSR Dependencies)](https://jrmicro-frontend.vercel.app/about)
 
-[Privacy Policy Page (SSR Modules)](https://jrmicro-frontend.vercel.app/privacy-policy)
+[Privacy Policy Page (SSR Dependencies)](https://jrmicro-frontend.vercel.app/privacy-policy)
 
 ### Install Dependencies
 
