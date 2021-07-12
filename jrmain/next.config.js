@@ -4,16 +4,21 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 module.exports = {
   webpack(config, options) {
     const { isServer } = options;
+    const isProduction = process.env.BUILD_ENV === 'production';
 
     const mfConfig = {
       remoteType: 'var',
       remotes: {
         jrcommon: 'jrcommon',
         jrlayout: isServer
-          ? 'jrlayout@http://localhost:3020/node/remoteEntry.js'
+          ? isProduction
+            ? 'jrlayout@https://jrlayout.vercel.app/node/remoteEntry.js'
+            : 'jrlayout@http://localhost:3020/node/remoteEntry.js'
           : 'jrlayout',
         jrprofile: isServer
-          ? 'jrprofile@http://localhost:3030/node/remoteEntry.js'
+          ? isProduction
+            ? 'jrprofile@https://jrprofile.vercel.app/node/remoteEntry.js'
+            : 'jrprofile@http://localhost:3030/node/remoteEntry.js'
           : 'jrprofile',
       },
       shared: {

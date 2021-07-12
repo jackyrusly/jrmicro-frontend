@@ -1,8 +1,11 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
+const isProduction = process.env.BUILD_ENV === 'production';
+
 class AppDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
+
     return { ...initialProps };
   }
 
@@ -12,15 +15,27 @@ class AppDocument extends Document {
         <Head>
           <script
             data-webpack="jrcommon"
-            src="http://localhost:3010/_next/static/chunks/remoteEntry.js"
+            src={
+              isProduction
+                ? 'https://jrcommon.vercel.app/_next/static/chunks/remoteEntry.js'
+                : 'http://localhost:3010/_next/static/chunks/remoteEntry.js'
+            }
           />
           <script
             data-webpack="jrlayout"
-            src="http://localhost:3020/web/remoteEntry.js"
+            src={
+              isProduction
+                ? 'https://jrlayout.vercel.app/web/remoteEntry.js'
+                : 'http://localhost:3020/web/remoteEntry.js'
+            }
           />
           <script
             data-webpack="jrprofile"
-            src="http://localhost:3030/web/remoteEntry.js"
+            src={
+              isProduction
+                ? 'https://jrprofile.vercel.app/web/remoteEntry.js'
+                : 'http://localhost:3030/web/remoteEntry.js'
+            }
           />
         </Head>
         <body>
