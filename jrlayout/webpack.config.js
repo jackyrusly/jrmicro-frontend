@@ -13,7 +13,10 @@ const getConfig = (target) => ({
   },
   output: {
     path: path.resolve(__dirname, 'dist', target),
-    publicPath: `http://localhost:3020/${target}/`,
+    publicPath:
+      process.env.BUILD_ENV === 'production'
+        ? `https://jrlayout.vercel.app/${target}/`
+        : `http://localhost:3020/${target}/`,
     clean: true,
   },
   devServer: {
