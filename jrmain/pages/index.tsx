@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 
@@ -14,6 +15,8 @@ const RemoteCard = dynamic(() => import('jrcommon/components/card'), {
 });
 
 const Index = () => {
+  const router = useRouter();
+
   return (
     <>
       <style jsx>{`
@@ -22,7 +25,7 @@ const Index = () => {
         }
       `}</style>
 
-      <RemoteHeader />
+      <RemoteHeader router={router} />
 
       <div className="margin">
         <RemoteCard>
