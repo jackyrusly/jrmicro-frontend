@@ -22,7 +22,10 @@ module.exports = withFederatedSidecar({
     const { isServer } = options;
 
     if (!isServer) {
-      config.output.publicPath = 'http://localhost:3010/_next/';
+      config.output.publicPath =
+        process.env.BUILD_ENV === 'production'
+          ? 'https://jrcommon.vercel.app/_next/'
+          : 'http://localhost:3010/_next/';
     }
 
     return config;
