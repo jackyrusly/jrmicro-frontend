@@ -13,7 +13,10 @@ const getConfig = (target) => ({
   },
   output: {
     path: path.resolve(__dirname, 'dist', target),
-    publicPath: `http://localhost:3030/${target}/`,
+    publicPath:
+      process.env.BUILD_ENV === 'production'
+        ? `http://localhost:3010/${target}/`
+        : `http://localhost:3030/${target}/`,
     clean: true,
   },
   devServer: {
