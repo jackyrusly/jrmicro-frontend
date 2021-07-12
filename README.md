@@ -1,5 +1,13 @@
 # JRMicro Frontend
 
+### Demo
+
+[Home Page (CSR Modules)](https://jrmicro-frontend.vercel.app)
+
+[About Page (SSR Modules)](https://jrmicro-frontend.vercel.app/about)
+
+[Privacy Policy Page (SSR Modules)](https://jrmicro-frontend.vercel.app/privacy-policy)
+
 ### Install Dependencies
 
 ```
