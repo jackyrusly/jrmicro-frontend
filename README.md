@@ -12,7 +12,6 @@
 
 ```
 cd jrcommon && yarn
-cd jrlayout && yarn
 cd jrprofile && yarn
 cd jrmain && yarn
 ```
@@ -21,12 +20,6 @@ cd jrmain && yarn
 
 ```
 cd jrcommon && yarn dev
-```
-
-### Run JRLayout
-
-```
-cd jrlayout && yarn build && yarn serve
 ```
 
 ### Run JRProfile
