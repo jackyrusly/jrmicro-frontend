@@ -26,7 +26,7 @@ class AppDocument extends Document {
             src={
               isProduction
                 ? 'https://jrprofile.vercel.app/web/remoteEntry.js'
-                : 'http://localhost:3030/web/remoteEntry.js'
+                : 'http://localhost:3020/web/remoteEntry.js'
             }
           />
         </Head>

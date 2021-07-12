@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "serve": "serve dist -p 3030",
+    "serve": "serve dist -p 3020",
     "clean": "rm -rf dist"
   },
   "dependencies": {

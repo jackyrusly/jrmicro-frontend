@@ -13,7 +13,7 @@ module.exports = {
         jrprofile: isServer
           ? isProduction
             ? 'jrprofile@https://jrprofile.vercel.app/node/remoteEntry.js'
-            : 'jrprofile@http://localhost:3030/node/remoteEntry.js'
+            : 'jrprofile@http://localhost:3020/node/remoteEntry.js'
           : 'jrprofile',
       },
       shared: {

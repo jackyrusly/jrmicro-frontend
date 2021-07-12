@@ -16,12 +16,12 @@ const getConfig = (target) => ({
     publicPath:
       process.env.BUILD_ENV === 'production'
         ? `https://jrprofile.vercel.app/${target}/`
-        : `http://localhost:3030/${target}/`,
+        : `http://localhost:3020/${target}/`,
     clean: true,
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    port: 3030,
+    port: 3020,
   },
   module: {
     rules: [
