@@ -10,11 +10,6 @@ module.exports = {
       remoteType: 'var',
       remotes: {
         jrcommon: 'jrcommon',
-        jrlayout: isServer
-          ? isProduction
-            ? 'jrlayout@https://jrlayout.vercel.app/node/remoteEntry.js'
-            : 'jrlayout@http://localhost:3020/node/remoteEntry.js'
-          : 'jrlayout',
         jrprofile: isServer
           ? isProduction
             ? 'jrprofile@https://jrprofile.vercel.app/node/remoteEntry.js'

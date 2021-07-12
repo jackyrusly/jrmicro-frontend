@@ -22,14 +22,6 @@ class AppDocument extends Document {
             }
           />
           <script
-            data-webpack="jrlayout"
-            src={
-              isProduction
-                ? 'https://jrlayout.vercel.app/web/remoteEntry.js'
-                : 'http://localhost:3020/web/remoteEntry.js'
-            }
-          />
-          <script
             data-webpack="jrprofile"
             src={
               isProduction

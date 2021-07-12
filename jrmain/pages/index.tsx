@@ -1,8 +1,13 @@
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 
-const RemoteHeader = (await import('jrlayout/components/header')).default;
-const RemoteFooter = (await import('jrlayout/components/footer')).default;
+const RemoteHeader = dynamic(() => import('jrcommon/components/header'), {
+  ssr: false,
+});
+
+const RemoteFooter = dynamic(() => import('jrcommon/components/footer'), {
+  ssr: false,
+});
 
 const RemoteCard = dynamic(() => import('jrcommon/components/card'), {
   ssr: false,
