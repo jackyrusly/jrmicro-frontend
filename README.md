@@ -33,3 +33,11 @@ cd jrprofile && yarn build && yarn serve
 ```
 cd jrmain && yarn dev
 ```
+
+## Author
+
+[Jacky Rusly](https://www.jackyrusly.web.id)
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT)
